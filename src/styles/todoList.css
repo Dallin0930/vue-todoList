@@ -1,0 +1,35 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  
+  #buttonOne {
+      position: relative;
+      left: -32px;
+      top: 10px;
+      background-color: coral;
+      color: aliceblue;
+  }
+  #buttonTwo {
+      position: relative;
+      left: 0px;
+      top: 10px;
+      background-color: coral;
+      color: aliceblue;
+  }
+  #buttonThree {
+      position: relative;
+      left: 28px;
+      top: 10px;
+      background-color: coral;
+      color: aliceblue;
+  }
+
+  #buttonAdd{
+      background-color: coral;
+      color: aliceblue;
+  }

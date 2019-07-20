@@ -11,7 +11,7 @@
 
         <div>
             <input class="input-text" type="text" name="ListItem" />&nbsp;&nbsp;     
-            <button id="button">add</button>
+            <button id="buttonAdd">add</button>
         </div>
         <br/>
 
@@ -19,20 +19,10 @@
 
 
         <div>
-            <!-- <ul id="filters">
-                <li>
-                    <a href="#" data-filter="all">ALL</a>
-                </li>
-                <li>
-                    <a href="#" data-filter="active">Active</a>
-                </li>
-                <li>
-                    <a href="#" data-filter="complete">Complete</a>
-                </li>
-            </ul> -->
-            <button align="left" style="float:left">All</button>
-            <button align="center" style="float:center">Active</button>
-            <button align="right" style="float:right">Complete</button>
+            
+            <button id="buttonOne">All</button>
+            <button id="buttonTwo">Active</button>
+            <button id="buttonThree">Complete</button>
         </div>
   </div>
 </template> 
@@ -57,7 +47,9 @@
             }
         }
     }
-
-
-
 </script>
+
+
+<style>
+  @import './styles/todoList.css'; 
+</style>
