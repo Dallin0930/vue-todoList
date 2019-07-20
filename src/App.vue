@@ -1,50 +1,55 @@
 
-
 <template>
-  <div id="app">    
+<div id="container">
+  <div id="app">   
         <div>
             <h2>Jquery To Do List</h2>
             <p>
                 <em>Simple Todo List with adding and filter by diff status.</em>
             </p>
-        </div>
+        </div>  
 
         <div>
-            <input class="input-text" type="text" name="ListItem" />&nbsp;&nbsp;     
-            <button id="buttonAdd">add</button>
+            <input id="input-text" type="text" name="ListItem"  v-model="list"/>&nbsp;&nbsp;     
+            <button id="buttonAdd" v-on:click="addList">add</button>
         </div>
         <br/>
 
-        <ol></ol>
-
-
-        <div>
+        <ol>
             
+            <li v-for="(d,index) in counter" :key="index">
+                <input type="checkbox">
+                <input type="text"  placeholder="0">
+            </li> 
+            
+             
+        </ol>
+
+        
+        <div>                    
             <button id="buttonOne">All</button>
-            <button id="buttonTwo">Active</button>
-            <button id="buttonThree">Complete</button>
+            <button id="buttonTwo">Active</button>  
+            <button id="buttonThree">Complete</button>  
         </div>
   </div>
+</div>
 </template> 
+
 
 
 
 <script>
     export default {
-        name:'app',
-
+        name:'App',
         data(){
             return {
-                count: 0
+                counter:[]
             }
         },
         methods: {  
-            increment(){
-                this.count++;
-            },
-            decrement(){
-                this.count--;  
-            }
+            addList(){
+                this.counter.push({});
+            }           
         }
     }
 </script>
